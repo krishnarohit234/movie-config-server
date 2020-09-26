@@ -1,1 +1,20 @@
 
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+  instance:
+    hostname: localhost
+    
+    
+microservice:
+  payment-service:
+    endpoints:
+      endpoint:
+        uri: http:// ratings-data-service/ratingsdata/rating
+  order-service:
+    endpoints:
+      endpoint:
+        uri: http://movie-info-service/movies/info  
