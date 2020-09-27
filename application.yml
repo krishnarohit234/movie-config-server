@@ -10,11 +10,11 @@ eureka:
     
     
 microservice:
-  payment-service:
+ catalog-service:
     endpoints:
       endpoint:
-        uri: http:// ratings-data-service/ratingsdata/rating
-  order-service:
+        uri: http://CATALOG-SERVICE/catalogdata/entry
+  info-service:
     endpoints:
       endpoint:
-        uri: http://movie-info-service/movies/info  
+        uri: http://USER-SERVICE/usersdata/entry
